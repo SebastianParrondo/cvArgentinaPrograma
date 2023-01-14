@@ -1,62 +1,89 @@
 /* ***** Reseteo CSS ***** */
 :root {
-    --main-font: sans-serif;
-    --font-size: 16px;
-    --main-color: #f7df1e;
-    --second-color: #222;
-    --main-modal-color: rgba(247, 222, 30, 0.85);
-    --second-modal-color: rgba(34, 34, 34, 0.85);
-    --container-width: 1200px;
+  --main-font: sans-serif;
+  --font-size: 16px;
+  --main-color: #f7df1e;
+  --second-color: #222;
+  --main-modal-color: rgba(247, 222, 30, 0.85);
+  --second-modal-color: rgba(34, 34, 34, 0.85);
+  --container-width: 1200px;
 }
 
 html {
-    box-sizing: border-box;
-    font-family: var(--main-font);
-    font-size: var(--font-size);
-    scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: var(--main-font);
+  font-size: var(--font-size);
+  scroll-behavior: smooth;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
-    margin: 0;
-    overflow-x: hidden;
+  margin: 0;
+  overflow-x: hidden;
 }
 
 img,
 video {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .flex-row-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* ***** Cabecera ***** */
 
-#cabecera{
-    background-color: var(--second-color);
-    color: #ffffff;
+#cabecera {
+  background-color: var(--second-color);
+  color: #ffffff;
 }
 
-.fotoTitular{
-    width: 50%;
-    
+.foto {
+  width: 50%;
+  min-width: 3rem;
+  margin: auto;
+
+  background-color: transparent;
 }
-.nombre{
-    font-size: 20px;
-    
+.foto img {
+  clip-path: inset(0px 0px 20px 0px);
 }
-.apellido{
-    font-size: 50px;    
+
+.nombre {
+  font-size: 2.5rem;
 }
-.especializacion{
-    font-size: 20px;
+
+.especializacion {
+  font-size: 1rem;
+}
+
+.loggin div {
+  margin-right: 0.7rem;
+  margin-top: 0.2rem;
+}
+
+.logginIcon {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 575px) {
+  .nombre {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .especializacion {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+  .logginIcon {
+    font-size: 1rem;
+  }
 }
