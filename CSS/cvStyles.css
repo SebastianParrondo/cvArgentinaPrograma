@@ -44,7 +44,6 @@ video {
 #cabecera {
   background-color: var(--second-color);
   color: #ffffff;
-  
 }
 
 .foto {
@@ -80,7 +79,7 @@ video {
   color: #ffffff;
 }
 
-.button{
+.button {
   background-color: #afafaf;
   border-radius: 50%;
   border: none;
@@ -92,44 +91,111 @@ video {
   width: auto;
 }
 
-.titulo{
+.titulo {
   margin-bottom: 2rem;
 }
 
-.datosContent{
-
+.datosContent {
   font-size: 14px;
-
 }
-.datosContent div{
+
+.lineaDivisoria {
+  height: 5px;
+  width: 70vw;
+  border-top: #afafaf solid 0.5px;
+  margin: auto;
+}
+
+/* ------- Seccion N°1 --------*/
+
+.seccion1 {
+  margin: 20px 10px 10px 10px;
+}
+
+.datosContent {
+  margin-top: 50px;
+}
+.datosContent div {
   display: inline-block;
   width: 100%;
   margin-left: 1rem;
   margin-bottom: 2rem;
 }
 
-.presentacionContent div{
+.presentacionContent div {
   padding: 10px;
- 
+}
+
+/*------ Seccion N°2------*/
+
+.seccion2 {
+  margin: 20px 10px 10px 10px;
+  padding-top: 20px;
+  height: 800px;
+  overflow: auto;
+}
+
+.containerEmpresa {
+  width: 60vw;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.containerDatosEmpresa {
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+}
+
+.nombreEmpresa {
+  text-align: center;
+}
+
+/*----- Seccion 3------*/
+
+.seccion3 {
+  margin: 20px 10px 10px 10px;
+  padding-top: 20px;
+  height: 100vh;
+}
+.containerFormacion {
+  width: 90vw;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.containerHabilidades {
+  width: 90vw;
+  margin: auto;
+  margin-top: 20px;
 }
 
 /*Media queris*/
 
-@media (max-width: 991px){
-  .titulo{
+@media (max-width: 991px) {
+  .seccion1 {
+    margin: 0 0 0 0;
+    border: #ffffff solid 0.5px;
+  }
+
+  .titulo {
     text-align: center;
-    
   }
-  .presentacionContent div{
+
+  .datosContent {
+    margin-top: 10px;
+  }
+
+  .presentacionContent div {
     padding: 20px;
-   
   }
 
-
+  .seccion2 {
+    height: 750px;
+  }
 }
 
 @media (max-width: 575px) {
-  .foto{
+  .foto {
     margin-top: -20px;
   }
   .nombre {
@@ -143,8 +209,10 @@ video {
   .logginIcon {
     font-size: 1rem;
   }
-  .phoneContent{
+  .phoneContent {
     display: inline;
   }
-  
+  .seccion2 {
+    height: 800px;
+  }
 }
