@@ -39,6 +39,10 @@ video {
   align-items: center;
 }
 
+p {
+  margin-bottom: 0px !important;
+}
+
 /* ***** Cabecera ***** */
 
 #cabecera {
@@ -160,7 +164,7 @@ video {
 .containerFormacion {
   width: 90vw;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 100px;
 }
 
 .containerHabilidades {
@@ -169,7 +173,43 @@ video {
   margin-top: 20px;
 }
 
+.cardBodyHard{
+  padding-left: 50px!important;
+}
+
+/*-----Seccion 4-----*/
+
+.seccion4 {
+  margin: 20px 10px 10px 10px;
+  padding-top: 20px;
+  height: 70vh;
+}
+
+.containerReferencia {
+  width: 90vw;
+  margin: auto;
+  margin-top: 150px;
+}
+
+.containerReferencia div{
+  padding-left: 20px;
+}
+
+.footer {
+  background-color: #f2f2f2;
+  
+}
 /*Media queris*/
+
+@media (max-width: 1027px) {
+  
+  .seccion2 {
+    height: 800px;
+  }
+  .seccion3 {
+    height: 700px;
+  }
+}
 
 @media (max-width: 991px) {
   .seccion1 {
@@ -190,8 +230,15 @@ video {
   }
 
   .seccion2 {
-    height: 750px;
+    height: 900px;
   }
+
+  .containerReferencia{
+    margin-top: 50px;
+    font-size: 12px;
+  }
+
+  
 }
 
 @media (max-width: 575px) {
@@ -213,6 +260,24 @@ video {
     display: inline;
   }
   .seccion2 {
-    height: 800px;
+    height: 900px;
+  }
+  .seccion3{
+    height: 1100px;
+  }
+
+  .seccion4{
+    height: 450px;
+    font-size: 10px;
+  }
+  
+  .containerReferencia{
+    margin-top: 20px;
+    font-size: 12px;
+  }
+
+  .containerReferencia .div{
+    border:#afafaf solid 0.5px;
+    margin-bottom: 20px;
   }
 }
