@@ -25,6 +25,8 @@ html {
 body {
   margin: 0;
   overflow-x: hidden;
+  background-color: #fafafa !important;
+  font-family: 'Kanit', sans-serif!important;
 }
 
 img,
@@ -41,6 +43,37 @@ video {
 
 p {
   margin-bottom: 0px !important;
+}
+
+/* ----- Btn-----*/
+
+.goUp-btn {
+  position: fixed;
+  z-index: 999;
+  bottom: 5vh;
+  right: calc(0.25rem + 1vw);
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  padding: 0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #afafaf;
+  border: 0;
+  outline: 0;
+  color: var(--second-color);
+  transition: all 0.7s ease;
+}
+
+.goUp-btn:hover{
+  background-color: #4a4a4a;
+  color: #ffffff;
+}
+
+.estas-activo{
+  visibility: hidden;
+  opacity: 0;
 }
 
 /* ***** Cabecera ***** */
@@ -113,7 +146,7 @@ p {
 /* ------- Seccion N°1 --------*/
 
 .seccion1 {
-  margin: 20px 10px 10px 10px;
+  margin: 20px 10px 50px 10px;  
 }
 
 .datosContent {
@@ -128,6 +161,12 @@ p {
 
 .presentacionContent div {
   padding: 10px;
+}
+
+.linked {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
 }
 
 /*------ Seccion N°2------*/
@@ -159,18 +198,24 @@ p {
 .seccion3 {
   margin: 20px 10px 10px 10px;
   padding-top: 20px;
-  height: 100vh;
+  height: 105vh;
 }
 .containerFormacion {
-  width: 90vw;
+  width: 90%;
   margin: auto;
-  margin-top: 100px;
+  margin-top: 20px;
 }
 
 .containerHabilidades {
-  width: 90vw;
+  width: 90%;
   margin: auto;
   margin-top: 20px;
+}
+.containerCursos{
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+
 }
 
 .cardBodyHard{
@@ -188,7 +233,7 @@ p {
 .containerReferencia {
   width: 90vw;
   margin: auto;
-  margin-top: 150px;
+  margin-top: 100px;
 }
 
 .containerReferencia div{
@@ -212,10 +257,7 @@ p {
 }
 
 @media (max-width: 991px) {
-  .seccion1 {
-    margin: 0 0 0 0;
-    border: #ffffff solid 0.5px;
-  }
+  
 
   .titulo {
     text-align: center;
@@ -230,6 +272,10 @@ p {
   }
 
   .seccion2 {
+    height: 900px;
+  }
+
+  .seccion3{
     height: 900px;
   }
 
@@ -263,7 +309,7 @@ p {
     height: 900px;
   }
   .seccion3{
-    height: 1100px;
+    height: 1500px;
   }
 
   .seccion4{
@@ -276,8 +322,16 @@ p {
     font-size: 12px;
   }
 
+  
+
   .containerReferencia .div{
-    border:#afafaf solid 0.5px;
+    
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 348px) {
+  .seccion3{
+    height: 1600px;
   }
 }

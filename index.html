@@ -5,12 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>C.V. Nombre</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Roboto&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/CSS/cvStyles.css" />
     <!--bootstrap-->
     <link rel="stylesheet" href="/bootstrap/bootstrap.min/bootstrap.min.css" />
@@ -20,6 +17,9 @@
     />
   </head>
   <body>
+    <button class="goUp-btn shadow estas-activo" id="goUp-btn">
+      <i class="bi bi-arrow-up"></i>
+    </button>
     <!--Cabecera-->
     <header class="" id="cabecera">
       <div class="row rowContent">
@@ -34,13 +34,13 @@
           </div>
         </div>
         <div class="col-12 col-sm-9">
-          <div class="col-12 nombre">Sebastian Parrondo</div>
+          <div class="col-12 nombre">Sebastián Parrondo</div>
           <div class="col-12 especializacion">Desarrollador web</div>
         </div>
       </div>
       <!--Barra de navegación-->
       <div class="row">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg" style="background-color: #f2f2f2;">
           <div class="container-fluid">
             <button
               class="navbar-toggler"
@@ -55,22 +55,22 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
-                <li class="nav-item">
+                <li class="nav-item ms-2">
                   <a
-                    class="nav-link active"
+                    class="nav-link"
                     aria-current="page"
                     href="#cabecera"
-                    >Sección 1</a
+                    >Datos Personales</a
                   >
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#seccion2">Sección 2</a>
+                <li class="nav-item ms-2">
+                  <a class="nav-link" href="#seccion2">Experiencia Laboral</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#seccion3">Sección 3</a>
+                <li class="nav-item ms-2">
+                  <a class="nav-link" href="#seccion3">Formación y Habilidades</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#seccion4">Sección 4</a>
+                <li class="nav-item ms-2">
+                  <a class="nav-link" href="#seccion4">Referencias</a>
                 </li>
               </ul>
             </div>
@@ -79,345 +79,333 @@
       </div>
     </header>
 
-    <!--Seccion n°1-->
-    <section id="seccion1" class="seccion1">
-      <h2 class="ms-4 titulo">Datos Personales</h2>
-      <div class="row">
-        <div class="col-12 col-lg-4">
-          <!--<h2 class="ms-4 titulo">Datos Personales</h2>-->
-          <div class="datosContent">
-            <div class="">
-              <span class="button ms-2"><i class="bi bi-telephone"></i></span
-              ><span class="ms-2">(11) 62586796 </span>
-            </div>
-            <div class="">
-              <span class="button ms-2"><i class="bi bi-envelope"></i></span
-              ><span class="ms-2">s_parrondo@hotmail.com </span>
-            </div>
-            <div class="">
-              <span class="button ms-2"><i class="bi bi-geo-alt"></i></span
-              ><span class="ms-2">Roca N°1230, El Calafate, Santa Cruz. </span>
-            </div>
-            <div class="">
-              <span class="button ms-2"><i class="bi bi-linkedin"></i></span
-              ><span class="ms-2">sebastianParrondo </span>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-lg-8 presentacionContent">
-          <div class="">
-            <h3>Presentación</h3>
-            <p class="">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-              facilis dignissimos laboriosam iste corporis, quia possimus earum
-              placeat laudantium asperiores obcaecati quibusdam dicta eum, minus
-              tempore veritatis, non ab perspiciatis! Lorem ipsum, dolor sit
-              amet consectetur adipisicing elit. Necessitatibus officia quam in,
-              at unde beatae temporibus eaque assumenda repudiandae saepe
-              debitis esse nam iusto eveniet natus accusamus fugiat id
-              consequuntur?
-            </p>
-          </div>
+    <div class="container">
 
-          <div>
-            <h3>Objetivo Profesional</h3>
-            <p class="">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatibus omnis nobis, repudiandae perspiciatis, totam esse
-              inventore dolorem quibusdam beatae fugiat dignissimos odit cumque
-              magni illo id laboriosam aspernatur sequi praesentium.
-            </p>
-          </div>
-          <div class="">
-            <h3>Perfil</h3>
-            <p class="">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
-              iste provident numquam fugit nihil quod temporibus. Facilis
-              dolores et veniam mollitia eum dolorum! Ducimus accusamus, sunt
-              ratione vitae odio minima. Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Magnam qui quos eaque perferendis amet cum
-              commodi modi nesciunt, pariatur mollitia, quis, in illum porro.
-              Saepe aspernatur debitis consectetur mollitia expedita?
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="lineaDivisoria"></div>
-
-    <!--Seccion n°2-->
-    <section id="seccion2" class="seccion2">
-      <h2 class="ms-4 titulo">Experiencia Laboral</h2>
-
-      <div class="containerEmpresa">
-        <div class="card shadow card1">
-          <h5 class="card-header">Nombre de la empresa N°1</h5>
-          <div class="card-body">
-            <h5 class="card-title">Titulo del cargo</h5>
-            <p class="card-text">año entrada- año salida</p>
-            <button
-              class="btn btn-primary"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseEmpresa1"
-              aria-expanded="false"
-              aria-controls="collapseExample"
-            >
-              Tareas
-            </button>
-            <div class="collapse" id="collapseEmpresa1">
-              <div class="card card-body">
-                <ul>
-                  <li>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  </li>
-                  <li>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Doloribus eum.
-                  </li>
-                  <li>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Voluptates amet.
-                  </li>
-                  <li>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Beatae, reprehenderit.
-                  </li>
-                  <li>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Deleniti, soluta ab.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="containerEmpresa">
-        <div class="card shadow">
-          <h5 class="card-header">Nombre de la empresa N°2</h5>
-          <div class="card-body">
-            <h5 class="card-title">Titulo del cargo</h5>
-            <p class="card-text">año entrada- año salida</p>
-            <button
-              class="btn btn-primary"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseEmpresa2"
-              aria-expanded="false"
-              aria-controls="collapseExample"
-            >
-              Tareas
-            </button>
-            <div class="collapse" id="collapseEmpresa2">
-              <div class="card card-body">
-                <ul>
-                  <li>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  </li>
-                  <li>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Doloribus eum.
-                  </li>
-                  <li>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Voluptates amet.
-                  </li>
-                  <li>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Beatae, reprehenderit.
-                  </li>
-                  <li>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Deleniti, soluta ab.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="containerEmpresa">
-        <div class="card shadow">
-          <h5 class="card-header">Nombre de la empresa N°3</h5>
-          <div class="card-body">
-            <h5 class="card-title">Titulo del cargo</h5>
-            <p class="card-text">año entrada- año salida</p>
-            <button
-              class="btn btn-primary"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseEmpresa3"
-              aria-expanded="false"
-              aria-controls="collapseExample"
-            >
-              Tareas
-            </button>
-            <div class="collapse" id="collapseEmpresa3">
-              <div class="card card-body">
-                <ul>
-                  <li>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  </li>
-                  <li>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Doloribus eum.
-                  </li>
-                  <li>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Voluptates amet.
-                  </li>
-                  <li>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Beatae, reprehenderit.
-                  </li>
-                  <li>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Deleniti, soluta ab.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="lineaDivisoria"></div>
-
-    <!--Seccion n°3-->
-    <section id="seccion3" class="seccion3">
-      <h2 class="ms-4 pt-4">Formación y Habilidades</h2>
-      <div class="containerFormacion">
+      <!--Seccion n°1-->
+      <section id="seccion1" class="seccion1">
+        <h2 class="ms-4 titulo">Datos Personales</h2>
         <div class="row">
-          <div class="col-sm-4 mb-3 mb-sm-0">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Nombre del Instituto</h5>
-                <p class="card-text">Nombre del título</p>
-                <p>añoInicio-añoFinal</p>
-                <p>Estado</p>
+          <div class="col-12 col-lg-4">
+            <!--<h2 class="ms-4 titulo">Datos Personales</h2>-->
+            <div class="datosContent">
+              <div class="">
+                <span class="button ms-2"><i class="bi bi-telephone"></i></span
+                ><span class="ms-2">(11) 62586796 </span>
+              </div>
+              <div class="">
+                <span class="button ms-2"><i class="bi bi-envelope"></i></span
+                ><span class="ms-2">s_parrondo@hotmail.com </span>
+              </div>
+              <div class="">
+                <span class="button ms-2"><i class="bi bi-geo-alt"></i></span
+                ><span class="ms-2">Roca N°1230, El Calafate, Santa Cruz. </span>
+              </div>
+              <div class="">
+                <span class="button ms-2"><i class="bi bi-linkedin"></i></span
+                ><a href="https://www.linkedin.com/in/sebastianparrondo/" class="ms-2 linked" target="_blank"> sebastianParrondo </a>
               </div>
             </div>
           </div>
-          <div class="col-sm-4">
-            <div class="card mb-3" >
-              <div class="card-body">
-                <h5 class="card-title">Nombre del Instituto 2</h5>
-                <p class="card-text">Nombre del título</p>
-                <p>añoInicio-añoFinal</p>
-                <p>Estado</p>
-              </div>
+          <div class="col-12 col-lg-8 presentacionContent">
+            <div class="">
+              <h3>Presentación</h3>
+              <p class="">
+                Soy estudiante de la carrera de Técnico Superior en Programación, cuento con mas de diez años de experiencia en el área de administración dentro de distintas empresas. Actulmente me encuentro en la busqueda de un cambio de rubro.
+              </p>
             </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Nombre del Instituto 3</h5>
-                <p class="card-text">Nombre del título</p>
-                <p>añoInicio-añoFinal</p>
-                <p>Estado</p>
-              </div>
+  
+            <div>
+              <h3>Objetivo Profesional</h3>
+              <p class="">
+                Poner en práctica los conocimientos adquiridos durante mi formación superior, y poder formar parte de un equipo de trabajo que me permita desarrollar personal y profesionalmente.
+              </p>
+            </div>
+            <div class="">
+              <h3>Perfil</h3>
+              <p class="">
+                Me considero una persona responsable con facilidad de adaptación y capacidad de trabajar en condiciones de alta presión, con iniciativa para resolver problemas eficientemente y lograr las metas y objetivos trazados por la empresa.
+              </p>
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="containerHabilidades">
-        <div class="row">
-          <div class="col-sm-6 mb-3 mb-sm-0">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Habilidades hard</h5>
-                <p class="card-text">
+      </section>
+  
+      <div class="lineaDivisoria"></div>
+  
+      <!--Seccion n°2-->
+      <section id="seccion2" class="seccion2">
+        <h2 class="ms-4 titulo">Experiencia Laboral</h2>
+  
+        <div class="containerEmpresa">
+          <div class="card shadow card1">
+            <h5 class="card-header">Garin Hnos. S.R.L.</h5>
+            <div class="card-body">
+              <h5 class="card-title">Administración de Cuentas Corrientes</h5>
+              <p class="card-text mb-3">2014 - presente</p>
+              <button
+                class="btn"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseEmpresa1"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+                style="background-color: #afafaf;"
+              >
+                Tareas
+              </button>
+              <div class="collapse" id="collapseEmpresa1">
+                <div class="card card-body">
                   <ul>
-                    <li>lalalala</li>
-                    <li>lalalala</li>
-                    <li>lalalala</li>
-                    <li>lalalala</li>
-                    <li>lalalala</li>
+                    <li>
+                      Seguimiento de cuentas corrientes, control de bancos, valores y recibos. Conciliaciones Bancarias.
+                    </li>
+                    <li>
+                      Área compras, incorporación de nuevos proveedores.
+                    </li>
+                    <li>
+                      Implementé el uso de facturas electrónicas integrándolo al sistema de gestión empleado por la empresa
+                    </li>
+                    <li>
+                      Manejo de Tango Gestión.
+                    </li>
+                    <li>
+                      Atención al Cliente
+                    </li>
                   </ul>
-                </p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-sm-6">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Habilidades soft</h5>
+        </div>
+  
+        <div class="containerEmpresa">
+          <div class="card shadow">
+            <h5 class="card-header">Valle Mitre S.A.</h5>
+            <div class="card-body">
+              <h5 class="card-title">Administrativo de Compras</h5>
+              <p class="card-text mb-3">2010 - 2013</p>
+              <button
+                class="btn"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseEmpresa2"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+                style="background-color: #afafaf;"
+              >
+                Tareas
+              </button>
+              <div class="collapse" id="collapseEmpresa2">
+                <div class="card card-body">
                   <ul>
-                    <li>lalalala</li>
-                    <li>lalalala</li>
-                    <li>lalalala</li>
-                    <li>lalalala</li>
-                    <li>lalalala</li>
-                  </ul>        
+                    <li>
+                      Desarrollé procedimientos de compras para cinco unidades de negocios
+                    </li>
+                    <li>
+                      Mantenimiento del stock mensual de mercaderías
+                    </li>
+                    <li>
+                      Control de salida bajo método F.I.F.O.
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      
-    </section>
-
-    <div class="lineaDivisoria"></div>
-
-    <!--Seccion n°4-->
-    <section id="seccion4" class="seccion4">
-      <h2 class="ms-4 pt-4">Referencias</h2>
-      <div class="containerReferencia">
-        <div class="row">
-          <div class="col-12 col-sm-4 div">
-            <p><strong>Nombre:</strong> Nombre Apellido</p>
-            <p><strong>Empresa:</strong> Nombre Empressa</p>
-            <p><strong>Cargo:</strong> Cargo</p>
-            <p><strong>Teléfono:</strong> 123454579</p>
-            <p><strong>E-mail:</strong> referencia@dominio.com</p>
-          </div>
-          <div class="col-12 col-sm-4 div">
-            <p><strong>Nombre:</strong> Nombre Apellido</p>
-            <p><strong>Empresa:</strong> Nombre Empressa</p>
-            <p><strong>Cargo:</strong> Cargo</p>
-            <p><strong>Teléfono:</strong> 123454579</p>
-            <p><strong>E-mail:</strong> referencia@dominio.com</p>
-          </div>
-          <div class="col-12 col-sm-4 div">
-            <p><strong>Nombre:</strong> Nombre Apellido</p>
-            <p><strong>Empresa:</strong> Nombre Empressa</p>
-            <p><strong>Cargo:</strong> Cargo</p>
-            <p><strong>Teléfono:</strong> 123454579</p>
-            <p><strong>E-mail:</strong> referencia@dominio.com</p>
+  
+        <div class="containerEmpresa">
+          <div class="card shadow">
+            <h5 class="card-header">Pritty S.A.</h5>
+            <div class="card-body">
+              <h5 class="card-title">Preventista</h5>
+              <p class="card-text mb-3">2006 - 2010</p>
+              <button
+                class="btn"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseEmpresa3"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+                style="background-color: #afafaf;"
+              >
+                Tareas
+              </button>
+              <div class="collapse" id="collapseEmpresa3">
+                <div class="card card-body">
+                  <ul>
+                    <li>
+                      Visita a clientes
+                    </li>
+                    <li>
+                      Acciones de Marcketing 
+                    </li>
+                    <li>
+                      Incorporacion de nuvos clientes a la cartera de la empresa
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
+  
+      <div class="lineaDivisoria"></div>
+  
+      <!--Seccion n°3-->
+      <section id="seccion3" class="seccion3">
+        <h2 class="ms-4 pt-4">Formación y Habilidades</h2>
+        <div class="containerFormacion">
+          <div class="row">
+            <div class="col-sm-4 mb-3 mb-sm-0">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Instituto Técnico Superior Teclab </h5>
+                  <p class="card-text">Técnico Superior en Programación</p>
+                  <p>2021 - 2023</p>
+                  <p>Finalizado</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Univ. Nacional Gral. Sarmiento</h5>
+                  <p class="card-text">Prof. Universitario en Matemática</p>
+                  <p>2001-2004</p>
+                  <p>Incompleto</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card mb-3" >
+                <div class="card-body">
+                  <h5 class="card-title">Escuela Integral Jorge Luis Borges</h5>
+                  <p class="card-text" >Bachiller</p>
+                  <p>1997 - 2001</p>
+                  <p>Finalizado</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="containerCursos">
+          <div class="row">
+            <div class="col-sm-12 mb-3 mb-sm-0">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Cursos</h5>
+                  <p class="card-text">
+                    <ul>
+                      <li><strong>Argentina Programa #SeProgramar</strong> en curso</li>
+                      <li><strong>Networking y Marketing Personal</strong> Fundación Movistar <span style="font-size: 13px;">(finalizado)</span></li>
+                      <li><strong>Habilidades para el Empleo</strong> Fundación Movistar <span style="font-size: 13px;">(finalizado)</span></li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="containerHabilidades">
+          <div class="row">
+            <div class="col-sm-6 mb-3 mb-sm-0">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Habilidades hard</h5>
+                  <p class="card-text">
+                    <ul>
+                      <li>HTML5</li>
+                      <li>CSS3</li>
+                      <li>JavaScript</li>
+                      <li>Bootstrap</li>
+                      <li>Angular</li>
+                      <li>Java</li>
+                      <li>Postgres</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Habilidades soft</h5>
+                    <ul>
+                      <li>Autodidacta</li>
+                      <li>Trabajo en equipo</li>
+                      <li>Gestión del Tiempo</li>
+                      <li>Método Scrum</li>
+                      <li>Diseño UX</li>
+                      <li>Diseño UX</li>
+                    </ul>        
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         
-        
-    </section>
+      </section>
+  
+      <div class="lineaDivisoria"></div>
+  
+      <!--Seccion n°4-->
+      <section id="seccion4" class="seccion4">
+        <h2 class="ms-4 pt-4">Referencias</h2>
+        <div class="containerReferencia container">
+          <div class="row">
+            <div class="col-12 col-sm-4 div">
+              <p><strong>Nombre:</strong> Nombre Apellido</p>
+              <p><strong>Empresa:</strong> Nombre Empresa</p>
+              <p><strong>Cargo:</strong> Cargo</p>
+              <p><strong>Teléfono:</strong> 123454579</p>
+              <p><strong>E-mail:</strong> referencia@dominio.com</p>
+            </div>
+            <div class="col-12 col-sm-4 div">
+              <p><strong>Nombre:</strong> Nombre Apellido</p>
+              <p><strong>Empresa:</strong> Nombre Empresa</p>
+              <p><strong>Cargo:</strong> Cargo</p>
+              <p><strong>Teléfono:</strong> 123454579</p>
+              <p><strong>E-mail:</strong> referencia@dominio.com</p>
+            </div>
+            <div class="col-12 col-sm-4 div">
+              <p><strong>Nombre:</strong> Nombre Apellido</p>
+              <p><strong>Empresa:</strong> Nombre Empresa</p>
+              <p><strong>Cargo:</strong> Cargo</p>
+              <p><strong>Teléfono:</strong> 123454579</p>
+              <p><strong>E-mail:</strong> referencia@dominio.com</p>
+            </div>
+          </div>
+        </div>
+          
+          
+      </section>
+    </div>
+
     
     <!--Footter-->
       <footer class="py-3 footer">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
           <li class="nav-item">
-            <a href="#seccion1" class="nav-link px2 text-muted">Seccion 1</a>
+            <a href="#seccion1" class="nav-link px2 text-muted">Datos Personales</a>
           </li>
           <li class="nav-item">
-            <a href="#seccion2" class="nav-link px2 text-muted">Seccion 2</a>
+            <a href="#seccion2" class="nav-link px2 text-muted">Experiencia Laboral</a>
           </li>
           <li class="nav-item">
-            <a href="#seccion3" class="nav-link px2 text-muted">Seccion 3</a>
+            <a href="#seccion3" class="nav-link px2 text-muted">Formación y Habilidades</a>
           </li>
         </ul>
-        <p class="text-center text-muted">© 2023 Sebastián Parondo, Inc</p>
+        <p class="text-center text-muted">© 2023 Sebastián Parrondo, Inc</p>
 
       </footer>
 
     
     
-
+    
     <!--JS bootstrap-->
     <script src="/bootstrap/jsbootstrap.min/bootstrap.bundle.min.js"></script>
+    <script src="modelo.js" type="module"></script>
   </body>
 </html>
